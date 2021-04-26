@@ -56,13 +56,14 @@ var parent = document.getElementById('active-flips')
 var i =0;
 
 function CreateGame(){
+    var game_id = decimalToHexString(i);
     var flip = document.createElement('div');
     flip.className = 'flip';
     var p1 = document.createElement('p');
     p1.className = 'text';
     var skin_container = document.createElement('div');
     skin_container.id = 'skin-container';
-    p1.innerHTML = ('Game ID: #' + i);
+    p1.innerHTML = ('Game ID: #' + game_id);
     flip.appendChild(p1);
     flip.appendChild(skin_container)
     parent.appendChild(flip);
@@ -86,6 +87,10 @@ function hideShow() {
   } else {
     x.style.display = "none";
   }
+}
+
+function decimalToHexString(number){
+  return number.toString(16).toUpperCase();
 }
 
 </script>
