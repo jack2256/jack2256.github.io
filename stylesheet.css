@@ -239,6 +239,29 @@ body{
     margin-bottom: 2%;
 }
 
+.flip p{
+    font-size: x-small;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    font-weight: lighter;
+    left: 1%;
+}
+
+.flip #skin-container{
+    position: absolute;
+    height: 85%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: rgb(29, 33, 38);
+    z-index: 1;
+    border-radius: 7px;
+    right: 10%;
+
+}
+
 .buttons button{
     transition: all ease 0.2s;
     position: absolute;

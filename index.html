@@ -46,6 +46,7 @@
 </div>
 
 <div id="active-flips"></div>
+</div>
 
 </body>
 
@@ -55,14 +56,16 @@ var parent = document.getElementById('active-flips')
 var i =0;
 
 function CreateGame(){
-    var divTag = document.createElement('div');
-    divTag.className = 'flip';
+    var flip = document.createElement('div');
+    flip.className = 'flip';
     var p1 = document.createElement('p');
     p1.className = 'text';
-    p1.innerHTML = ('FLIP ' + i);
-    divTag.appendChild(p1);
-
-    parent.appendChild(divTag);
+    var skin_container = document.createElement('div');
+    skin_container.id = 'skin-container';
+    p1.innerHTML = ('Game ID: #' + i);
+    flip.appendChild(p1);
+    flip.appendChild(skin_container)
+    parent.appendChild(flip);
     i ++;
 }
 
