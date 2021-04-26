@@ -79,7 +79,7 @@ head.appendChild(link);
 var rot=0;
 function hideShow() {
   var x = document.getElementById("inventory-box");
-  document.getElementById("arrow").style.transform = 'rotate(' + rot + 'deg)';
+  document.getElementById("arrow").style.transform = 'rotateX(' + rot + 'deg)';
   rot +=180;
   if (x.style.display === "none") {
     x.style.display = "block";
