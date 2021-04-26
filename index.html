@@ -8,10 +8,10 @@
         <title>csgo-flip.com | Coin Flip</title>
     </head>
 
-    <body>
-<!--<div id="inventory-box">
+    <body onload="hideShow()">
+<div id="inventory-box">
     <h1>INVENTORY</h1>
-</div>-->
+</div>
 <div class="navbar">
     <img src="assets/logo.png" id="logo">
 <div class="navbar-right">
@@ -21,7 +21,7 @@
     <div class="deposit">
         <button>DEPOSIT</button>
     </div>
-    <div class="inventory">
+    <div class="inventory" onclick="hideShow()">
         <img src="assets/inventory.png" id="chest">
         <img src="assets/dropdown.png" id="arrow">
     </div>
@@ -72,6 +72,18 @@ link.rel = 'stylesheet';
 link.type = 'text/css';
 link.href = 'stylesheet.css'; 
 head.appendChild(link);
+
+var rot=0;
+function hideShow() {
+  var x = document.getElementById("inventory-box");
+  document.getElementById("arrow").style.transform = 'rotate(' + rot + 'deg)';
+  rot +=180;
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 
 </script>
 </html>
