@@ -2,7 +2,8 @@ body{
     background-size: auto;
     background-repeat: no-repeat;
     /*background-color: rgb(33, 37, 43);*/
-    background-image: url(assets/fire-particles-bg.png);
+    /*background-image: url(assets/fire-particles-bg.png);*/
+    background-image: url(assets/bg.png);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
