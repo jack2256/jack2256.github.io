@@ -9,7 +9,9 @@
     </head>
 
     <body>
-
+<div id="inventory-box">
+    <h1>INVENTORY</h1>
+</div>
 <div class="navbar">
     <img src="assets/logo.png" id="logo">
 <div class="navbar-right">
@@ -19,10 +21,9 @@
     <div class="deposit">
         <button>DEPOSIT</button>
     </div>
-    <div class="inventory">
+    <div class="inventory" onclick="document.getElementById('inventory-box').style.zIndex = '10'">
         <img src="assets/inventory.png" id="chest">
         <img src="assets/dropdown.png" id="arrow">
-        <div class="inventory-box"></div>
     </div>
     <div class="sign-in">
         <img src="assets/steam-logo.png">
