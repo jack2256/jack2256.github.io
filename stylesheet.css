@@ -1,0 +1,170 @@
+body{
+    background-size: auto;
+    background-repeat: no-repeat;
+    /*background-color: rgb(33, 37, 43);*/
+    background-image: url(assets/fire-particles-bg.png);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(29, 33, 38);
+    color: snow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar #site_name{
+    padding-left: 3%;
+}
+
+.navbar-right{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 18%;
+    right: 1%;
+    align-items: center;
+}
+
+.sign-in{
+    position: relative;
+    cursor: pointer;
+    height: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    transition: all ease 0.2s;
+}
+
+.sign-in img{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.sign-in p{
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+.deposit{
+    position: relative;
+    height: 45%;
+    width: 30%;
+    transition: all ease 0.2s;
+}
+
+.deposit button{
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 199, 77);
+    border: none;
+    color: snow;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.inventory{
+    position: relative;
+    height: 45%;
+    width: auto;
+    background-color: rgb(49, 53, 61);
+    width: 25%;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inventory #chest{
+    margin-left: 2%;
+    position: relative;
+    height: 80%;
+    width: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inventory #arrow{
+    margin-right: 2%;
+    position: relative;
+    width: 15%;
+    height: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.deposit:hover,.sign-in:hover{
+    transform: translateY(-2%);
+}
+
+.chat{
+    position: absolute;
+    background-color: rgb(29, 33, 38);
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    z-index: -1;
+
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    overflow: hidden;
+}
+
+.chat h1{
+    color: darkgray;
+}
+
+.type-box{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    height: 5%;
+}
+
+.type-box hr{
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: darkgray;
+}
+
+.type-box input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    caret-color: snow;
+    color: snow;
+    border: none;
+    left: 3%;
+}
+
+.type-box input:focus{
+    outline: none;
+}
