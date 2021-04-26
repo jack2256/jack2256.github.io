@@ -29,6 +29,13 @@ body{
     padding-left: 3%;
 }
 
+.navbar #logo{
+    left: 3%;
+    position: absolute;
+    height: 90%;
+    width: auto;
+}
+
 .navbar-right{
     position: absolute;
     display: flex;
