@@ -32,7 +32,7 @@ body{
 #inventory-box{
     position: fixed;
     background-color: rgb(34, 39, 45);
-    height: 25%;
+    height: 35%;
     width: 20%;
     right: 8%;
     top: 11%;
@@ -52,6 +52,16 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#inventory-box p{
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: snow;
+    font-weight: lighter;
+    font-size: 15px;
 }
 
 .navbar #site_name{
