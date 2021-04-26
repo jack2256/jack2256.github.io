@@ -30,16 +30,25 @@ body{
     display: flex;
     justify-content: space-between;
     height: 100%;
-    width: 18%;
+    width: 25%;
     right: 1%;
     align-items: center;
+}
+
+.withdraw{
+    cursor: pointer;
+    color: hsla(0,0%,100%,.5);
+    transition: all ease 0.2s;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
 }
 
 .sign-in{
     position: relative;
     cursor: pointer;
     height: 50%;
-    width: 30%;
+    width: 23%;
     display: flex;
     justify-content: space-between;
     transition: all ease 0.2s;
@@ -67,7 +76,7 @@ body{
 .deposit{
     position: relative;
     height: 45%;
-    width: 30%;
+    width: 25%;
     transition: all ease 0.2s;
 }
 
@@ -89,7 +98,7 @@ body{
     height: 45%;
     width: auto;
     background-color: rgb(49, 53, 61);
-    width: 25%;
+    width: 20%;
     border-radius: 7px;
     cursor: pointer;
     display: flex;
@@ -114,7 +123,7 @@ body{
     transform: translateY(-50%);
 }
 
-.deposit:hover,.sign-in:hover{
+.deposit:hover,.sign-in:hover,.withdraw:hover{
     transform: translateY(-2%);
 }
 
