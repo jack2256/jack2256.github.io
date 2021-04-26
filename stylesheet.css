@@ -128,13 +128,13 @@ body{
     z-index: -1;
 
     display: flex;
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 
 .chat h1{
-    color: darkgray;
+    color: #31353d;
 }
 
 .type-box{
@@ -149,12 +149,12 @@ body{
     margin: 0;
     border: none;
     height: 1px;
-    background-color: darkgray;
+    background-color: #31353d
 }
 
 .type-box input{
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
     outline: none;
     background: none;
